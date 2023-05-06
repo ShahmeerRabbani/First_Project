@@ -6,6 +6,7 @@ import Left from "./leftside/Left";
 import Login from "./login";
 import Link from "./links";
 import Signup from "./signUp";
+import Firestore from "./firestore";
 
 
 export{
@@ -15,5 +16,6 @@ export{
     Left,
     Login,
     Link,
-    Signup
+    Signup,
+    Firestore
 }

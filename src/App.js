@@ -2,7 +2,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import './App.css'
-import {Link, Login, Signup} from './components'
+import {Firestore, Link, Login, Signup} from './components'
 
 
 export default function App() {
@@ -13,6 +13,7 @@ export default function App() {
     <Route path="/login" element={<Login/>}/>
     <Route path="/" element={<Link/>}/>
     <Route path="/signup" element={<Signup/>}/>
+    <Route path="/firestore" element={<Firestore/>}/>
     </Routes>
 
     </>
