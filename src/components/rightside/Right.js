@@ -7,7 +7,7 @@ function Right(){
                 <div className="right-body">
                 <div className="right-icon1">
                     <img src="./images/me.jpg" alt=""/>
-                    <p>شاہ میر ربانی</p>
+                    <p>Shahmeer Rabbani</p>
                 </div>
                 <div className="right-icon2">
                     <img src="./images/2people.png" alt=""/>

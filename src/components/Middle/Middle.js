@@ -26,7 +26,6 @@ function Middle(){
                                 <div className="myimage">
                                 <img src="./images/me.jpg" alt=""/>
                                 </div>
-                            <div className="border"></div>
                             </div>
                             <div className="story2">
                                 <img src="./images/t5.jpg" alt=""/>
@@ -40,6 +39,7 @@ function Middle(){
                               <button>▶</button>
                             </div>
                             </div>
+                            
                            
                         </div>
                     </div>
