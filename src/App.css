@@ -2,6 +2,103 @@
 body{
   margin: 0;
 }
+
+/*----------------Header Right----------------*/
+
+@media screen and (max-width: 601px) {
+  .right-head .search-bar{
+    height: 44px;
+    width: 44px;
+    /* align-items: center; */
+    justify-content: center;
+    /* display: flex; */
+    cursor: pointer;
+  }
+
+  .search-bar input{
+    display: none;
+   }
+
+   .search-bar img{
+    /* justify-self: center; */
+    margin: 0;
+    height: 19px;
+    width: 19px;
+    /* align-self: center; */
+  }
+
+  .header .right-head{
+    justify-content: flex-start;
+    margin-left: 15px;
+  }
+
+  .header .right-head .search-bar:hover{
+    background-color: #c5c7cb;
+  }
+
+}
+
+/*----------------Header Middle----------------*/
+
+
+@media screen and (max-width:1175px) {
+  .header .middle-head{
+   justify-content: space-around;
+   width: 250px;
+
+  }
+}
+
+@media screen and (max-width:900px) {
+  .header .middle-head{
+    display: none;
+  }
+}
+
+/*----------------Header Left----------------*/
+
+@media screen and (max-width:1175px) {
+  .header .left-head{
+    padding: 0%;
+
+  }
+}
+
+/*----------------Right Body----------------*/
+
+@media screen and (max-width:1050px) {
+  .main-body .right-body{
+    display: none;
+  }
+}
+
+/*----------------left Body----------------*/
+
+@media screen and (max-width:800px) {
+  .main-body .left-body{
+    display: none;
+  }
+}
+
+
+/*----------------Middle Body----------------*/
+
+@media screen and (max-width:1050px) {
+  .main-body .middle-body{
+    align-items: flex-start;
+    margin-left: 20px;
+    margin-top: 5%;
+    flex: 2;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .main-body .middle-body{
+    align-items: center;
+    margin-top: 7%;
+  }
+}
+
 /* -------------------------Facebook Login Page------------------------- */
 .Login-main{
   display: flex;
