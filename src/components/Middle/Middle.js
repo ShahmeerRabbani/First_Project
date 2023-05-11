@@ -23,23 +23,49 @@ function Middle(){
                         </div>
                         <div className="story">
                             <div className="story1">
-                                <div className="myimage">
-                                <img src="./images/me.jpg" alt=""/>
+                                {/* <div className="story-circle1">
+                                <div className="story-circle">
+                                    <img src="./images/me.jpg"/>
                                 </div>
+                                </div> */}
+                                <img src="./images/me.jpg" alt=""/>
                             </div>
-                            <div className="story2">
-                                <img src="./images/t5.jpg" alt=""/>
-                            </div>
-                            <div className="story3">
-                                <img src="./images/t4.jpeg" alt=""/>
-                            </div>
-                            <div className="story4">
-                                <img src="./images/t8.jpg" alt=""/>
-                                <div className="arrow">
-                              <button>▶</button>
-                            </div>
+                           
+                            <div className="story1">
+                                <img src="./images/t1.jpg" alt=""/>
                             </div>
                             
+                            <div className="story1">
+                                <img src="./images/t2.jpg" alt=""/>
+                            </div>
+                            
+                            <div className="story1">
+                                <img src="./images/t3.jpg" alt=""/>
+                            </div>
+                           
+                            <div className="story1">
+                                <img src="./images/t4.jpeg" alt=""/>
+                            </div>
+                            <div className="story1">
+                                <img src="./images/t5.jpg" alt=""/>
+                            </div>
+                           
+                            <div className="story1">
+                                <img src="./images/t6.jpg" alt=""/>
+                            </div>
+                            
+                            <div className="story1">
+                                <img src="./images/t7.jpg" alt=""/>
+                            </div>
+                            <div className="story1">
+                                <img src="./images/t8.jpg" alt=""/>
+                            </div>
+                            <div className="story1">
+                                <img src="./images/t9.jpg" alt=""/>
+                            </div>
+                            <div className="story1">
+                                <img src="./images/t10.jpg" alt=""/>
+                            </div>
                            
                         </div>
                     </div>
