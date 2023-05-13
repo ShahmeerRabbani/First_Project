@@ -5,26 +5,23 @@ body {
 
 /*----------------Header Right----------------*/
 
-@media screen and (max-width: 601px) {
-  .right-head .search-bar {
+@media screen and (max-width:601px) {
+  .right-head .search-bar{
     height: 44px;
     width: 44px;
-    /* align-items: center; */
-    justify-content: center;
-    /* display: flex; */
     cursor: pointer;
-  }
+    justify-content: center;
 
-  .search-bar input {
+  }
+  
+  .search-bar input{
     display: none;
   }
 
-  .search-bar img {
-    /* justify-self: center; */
-    margin: 0;
-    height: 19px;
+  .search-bar img{
     width: 19px;
-    /* align-self: center; */
+    height: 19px;
+    margin: 0;
   }
 
   .header .right-head {
@@ -37,6 +34,7 @@ body {
   }
 
 }
+
 
 /*----------------Header Middle----------------*/
 

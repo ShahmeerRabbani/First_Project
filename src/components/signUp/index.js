@@ -95,7 +95,7 @@ function Signup() {
                             >Sign Up</Button>
                         </div>
                         <div className='forget'>
-                            <p>Already have an account?<Link to={'/login'}>Sign In </Link></p>
+                            <p>Already have an account?<Link to={'/'}>Sign In </Link></p>
                         </div>
                         <div className='create-account'>
                             <Button
