@@ -10,8 +10,8 @@ export default function App() {
 
   return (<>
   <Routes>
-    <Route path="/login" element={<Login/>}/>
-    <Route path="/" element={<Link/>}/>
+    <Route path="/" element={<Login/>}/>
+    <Route path="/Home" element={<Link/>}/>
     <Route path="/signup" element={<Signup/>}/>
     <Route path="/firestore" element={<Firestore/>}/>
     </Routes>

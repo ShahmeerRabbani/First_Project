@@ -10,7 +10,7 @@ function Head(){
 
     const handleLogout = () => {
         localStorage.removeItem("user")
-        navigate('/login', {replace: true})
+        navigate('/', {replace: true})
     }
 
 

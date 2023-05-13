@@ -36,7 +36,7 @@ function Signup() {
     const handleCheckUser = () => {
         const user = localStorage.getItem("user")
         if (user) {
-            navigate('/', { replace: true })
+            navigate('/Home', { replace: true })
         }
     }
 
@@ -44,24 +44,12 @@ function Signup() {
         console.log("values", values)
         createUserWithEmailAndPassword(auth, values.email, values.password)
             .then((res) => {
-                console.log("res", res)
-                navigate('/login', { replace: true })
+                console.log( res)
+                navigate('/', { replace: true })
             })
             .catch((e) => {
-                console.log("e", e)
+                console.log( e)
             })
-    }
-
-    const handleAddData = async () => {
-        console.log("data adding -----")
-
-        const myCollection = collection(db, "simple_data")
-        const payload = {
-            name: "Shammi",
-            age: 18
-        }
-        await addDoc(myCollection, payload)
-        console.log("data added -----")
     }
 
     return (
@@ -69,7 +57,6 @@ function Signup() {
             <Container>
                 <div className='Login-main'>
                     <div className='Login_Heading'>
-                        <button onClick={handleAddData}>add data</button>
                         <h1>facebook </h1>
                         <p>Facebook helps you connect and share with the people in your life.</p>
                     </div>

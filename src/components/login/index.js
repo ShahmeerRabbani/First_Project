@@ -32,19 +32,19 @@ function Login(){
     const handleCheckUser = () => {
         const user = localStorage.getItem("user")
         if(user){
-            navigate('/', {replace: true})
+            navigate('/Home', {replace: true})
         }
     }
 
     const handleLogin = (values) => {
         signInWithEmailAndPassword(auth, values.email, values.password)
         .then((res)=>{
-            console.log("res", res.user)
-            navigate('/', {replace: true})
+            console.log( res.user)
+            navigate('/Home', {replace: true})
             localStorage.setItem("user", JSON.stringify(res.user))
         })
         .catch((e)=>{
-            console.log("e", e)
+            console.log( e)
         })
     }
 

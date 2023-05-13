@@ -18,7 +18,7 @@ function Link(){
     const handleCheckUser = () => {
         const user = localStorage.getItem("user")
         if(!user){
-            navigate('/login', {replace: true})
+            navigate('/', {replace: true})
         }
     }
 
