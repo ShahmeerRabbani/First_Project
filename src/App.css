@@ -13,7 +13,7 @@ body {
     justify-content: center;
 
   }
-  
+
   .search-bar input{
     display: none;
   }
@@ -62,6 +62,12 @@ body {
   }
 }
 
+@media screen and (max-width:500px) {
+  .header .left-head .left-icon2{
+    display: none;
+  }
+}
+
 /*----------------Right Body----------------*/
 
 @media screen and (max-width:1050px) {
@@ -94,6 +100,44 @@ body {
   .main-body .middle-body {
     align-items: center;
     margin-top: 7%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .middle-body .main-mid{
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .main-body .mid-body{
+    width: 350px;
+    align-items: center;
+  }
+  .middle-body .mid-body2{
+    width: 350px;
+  }
+  .mid-body2 .mid-search .search-box{
+    width: 250px;
+  }
+  .middle-body .mid-body3{
+    width: 350px;
+  }
+  .mid-body3 .postpic{
+    /* height: 300px; */
+    width: 350px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .Login-main .Login-page .text-field .input{
+    width: 270px;
+  }
+  .Login-main .Login-page .text-field2 .input2{
+    width: 270px;
+  }
+  .Login-main .Login-page .login-Button{
+    width: 270px;
   }
 }
 

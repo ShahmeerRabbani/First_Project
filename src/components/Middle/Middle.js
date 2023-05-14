@@ -83,7 +83,7 @@ function Middle(){
                             </div>
                             <div className="midle-icon2">
                                 <img src="./images/images-removebg-preview.png" alt="" />
-                                <p><Link to={"/firestore"}>Photo/video</Link> </p>
+                                <p>Photo/video </p>
                             </div>
                             <div className="midle-icon3">
                                 <img src="./images/smile_emoji-removebg-preview.png" alt=""/>

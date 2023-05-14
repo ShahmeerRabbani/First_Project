@@ -1,10 +1,20 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Box, Button, Modal } from "@mui/material";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 
 
 
 function Head(){
+
+    const [open, setOpen] = useState(false)
+    const handleOpen = () => {
+        setOpen(true)
+    }
+    const handleClose = () => {
+        setOpen(false)
+        navigate('/Home')
+    }
 
     const navigate = useNavigate()
 
@@ -67,8 +77,24 @@ function Head(){
                 </div>
             </div>
             <div className="left-head">
-                <div className="left-icon1" title="Create">
-                    <img src="./images/plus.png" alt=""/>
+                <div className="left-icon1" title="Create" onClick={handleOpen}>
+                {/* <Link to={"/firestore"}><img src="./images/plus.png" alt=""/></Link> */}
+                <img src="./images/plus.png" alt=""/>
+                <Modal
+                open={open}
+                
+                // onClose={handleClose}
+                
+                >
+                    <Box sx={{mt:2}}>
+                    <Button
+                    onClose={handleClose}
+                    >Cancel</Button>
+                        <h1>Hello</h1>
+                    </Box>
+                </Modal>
+
+
                 </div>
                 <div className="left-icon2" title="Messenger">
                     <img src="./images/messenger.png" alt=""/>
