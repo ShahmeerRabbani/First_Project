@@ -1,38 +1,34 @@
-import { Box, Button, Modal } from "@mui/material";
-import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 
 
-function Head(){
+function Head() {
 
-    const [open, setOpen] = useState(false)
-    const handleOpen = () => {
-        setOpen(true)
-    }
-    const handleClose = () => {
-        setOpen(false)
-        navigate('/Home')
-    }
-
+    
     const navigate = useNavigate()
 
     const handleLogout = () => {
         localStorage.removeItem("user")
-        navigate('/', {replace: true})
+        navigate('/', { replace: true })
     }
 
 
-    return<>
-    <div className="header">
+
+
+    
+
+
+    return <>
+        <div className="header">
             <div className="right-head">
                 <div className="first-icon">
-                    <img src="./images/Facebook_icon.png" alt=""/>
+                    <img src="./images/Facebook_icon.png" alt="" />
                 </div>
                 <div className="search-bar">
-                    <img src="./images/search-icon.png" className="search-icon" alt=""/>
-                    <input type="text" placeholder="Search Facebook"/>
+                    <img src="./images/search-icon.png" className="search-icon" alt="" />
+                    <input type="text" placeholder="Search Facebook" />
 
                 </div>
             </div>
@@ -77,40 +73,24 @@ function Head(){
                 </div>
             </div>
             <div className="left-head">
-                <div className="left-icon1" title="Create" onClick={handleOpen}>
-                {/* <Link to={"/firestore"}><img src="./images/plus.png" alt=""/></Link> */}
-                <img src="./images/plus.png" alt=""/>
-                <Modal
-                open={open}
-                
-                // onClose={handleClose}
-                
-                >
-                    <Box sx={{mt:2}}>
-                    <Button
-                    onClose={handleClose}
-                    >Cancel</Button>
-                        <h1>Hello</h1>
-                    </Box>
-                </Modal>
-
-
+                <div className="left-icon1" title="Create" >
+                    <img src="./images/menu icon.png" alt="" />
                 </div>
                 <div className="left-icon2" title="Messenger">
-                    <img src="./images/messenger.png" alt=""/>
+                    <img src="./images/messenger.png" alt="" />
                 </div>
                 <div className="left-icon3" title="Notification">
-                    <img src="./images/bell.png" alt=""/>
+                    <img src="./images/bell.png" alt="" />
                 </div>
                 <div onClick={handleLogout} className="left-icon5" title="logout">
-                    <img src="./images/logout.png" alt=""/>
+                    <img src="./images/logout.png" alt="" />
                 </div>
                 <div className="left-icon4" title="Accounts">
-                    <img src="./images/boy vector-01.jpg" alt=""/>
+                    <img src="./images/boy vector-01.jpg" alt="" />
                 </div>
             </div>
-        </div>
-    
+        </div >
+
     </>
 
 }

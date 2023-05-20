@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Head from "../head/Head";
 import Left from "../leftside/Left";
@@ -26,7 +26,7 @@ function Link(){
         <>
            <div className="body">
             <Head/>
-        <div className="main-body">
+        <div className="main-body" >
             <Right/>
             <Middle/>
             <Left/>
